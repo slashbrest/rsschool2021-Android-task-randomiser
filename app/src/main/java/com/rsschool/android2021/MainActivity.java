@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements Transition {
     private void openSecondFragment(int min, int max) {
         final Fragment secondFragment = SecondFragment.newInstance(min,max);
         final FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, secondFragment).addToBackStack("tag");
+        transaction.replace(R.id.container, secondFragment);
         transaction.commit();
         // TODO: implement it
     }
